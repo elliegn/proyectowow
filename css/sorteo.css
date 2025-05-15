@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding-top: 50px; /* Espacio para el encabezado fijo */
+  background-color: #e8f0fe; /* Color de respaldo */
+  background-image: url('fondo1.jpg'); /* Imagen del fondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+  overflow-x: hidden; /* Evita scroll horizontal */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header nav a {
+  font-size: 1.2rem;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #ffffff;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #ffffff; /* Amarillo */
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1), 1px 1px 5px rgba(0, 0, 0, 1); /* Sombras negras */
+  font-stretch: normal; /* Asegura que la tipografía no esté alargada */
+}
+
+p {
+  margin-top: 20px;
+  color: #fff3af; /* Amarillo */
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1), 1px 1px 5px rgba(0, 0, 0, 1); /* Sombras negras */
+  font-stretch: normal; /* Asegura que la tipografía no esté alargada */
+}
+
+h2 {
+  color: #ffd700; /* Amarillo */
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight: 600;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* Sombras negras llamativas */
+  animation: glow 1.5s infinite alternate;
+  font-stretch: normal; /* Asegura que la tipografía no esté alargada */
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1);
+  }
+  100% {
+    text-shadow: 6px 6px 15px rgba(255, 255, 0, 1), 4px 4px 10px rgba(0, 0, 0, 1); /* Añade un brillo amarillo llamativo */
+  }
+}
+
+.image-container img {
+  max-width: 250px;
+  height: auto; /* Asegura que las imágenes no se deformen */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Sombra suave y sin contornos de caja */
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

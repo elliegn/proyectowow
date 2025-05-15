@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu oportunidad de ganar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="probabilidad.css">
+</head>
+<style>
+
+</style>
+<body>
+  <!-- Encabezado fijo -->
+ <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="sorteo.html">¿De que trata?</a>
+      <a href= "REGALOS.html">Regalos</a>
+      <a href="ruleta.html">Casino</a>
+      <a href="bolsa.html">Inversiones</a>
+      <a href="form.html">Formulario</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <img src="p.png" class="img-pinguino" alt="pingüino">
+    <img src="r1.png" class="img-regalo1" alt="regalo">
+    <img src="r2.png" class="img-regalo2" alt="regalo">
+    <img src="s.png" class="img-santa" alt="santa">
+
+    <h1>PROBABILIDAD<br>DE <br> GANAR</h1>
+    <p>Aquí puedes testear tu suerte! Descubre el porcentaje que tienes de ganar alguno de nuestros premios 🦄😍</p>
+  
+    <h2>¡DESCUBRE!</h2>
+    <div class="boton">
+      <img src="t.gif" alt="tragamonedas" class="tragamonedas">
+      <input type="number" id="numero" placeholder="Pon tu numero de la suerte 😝👑" class="input-number">
+      <button id="boton" class="boton-calcular">Calcular</button>
+      <div class="resultado"> 
+        <p id="resultado"> </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="comentarios">
+    <h3>Comentarios de ganadores anteriores 🥰💘</h3>
+    <div class="com">
+      <p><strong>Chevo677nl:</strong> ¡Qu e emoción! Me gana un regalo 🎉 ¡Nunca habia tenido tanta suerteeee! 😱🎁</p>
+    </div>
+    <div class="com">
+      <p><strong>ismaIUTU568:</strong> NO LO CREO, me gane un IPhone 89, PS5 y un auto de carreras!!! 😂😂 ya quiero que llegueee!!! 😎💥 #SuerteONoSe</p>
+    </div>
+    <div class="com">
+      <p><strong>punkFurryOMEGALUL77:</strong> Wuuuuu, ME TOCO UNA CYBERTRUCK, UN YATE, Y UN HELICOPTERO PRIVADO 😱😂 Todo mi año esta salvado, ya soy millonario 😂💸🔥</p>
+    </div>
+    <div class="com">
+      <p><strong>qbengamercerdin666:</strong> NO LO CREO, ME GANE UNA USB DE 128GB!!! 😱😱 No puedo dejar de gritar, ahora si voy a guardar todos mis memes sin preocupaciones 😜😂💾 #TecnologiaAlMaximo</p>
+    </div>
+  </div>
+
+
+  <script>
+    const boton = document.getElementById('boton');
+    const numeroInput = document.getElementById('numero');
+    const resultado = document.getElementById('resultado');
+
+    // Deshabilita el botón inicialmente
+    boton.disabled = true;
+
+    numeroInput.addEventListener('input', () => {
+        // Si el campo tiene algún valor, habilita el botón; de lo contrario, lo deshabilita
+        boton.disabled = numeroInput.value.trim() === '';
+    });
+
+    boton.addEventListener('click', () => {
+        const numero = parseInt(numeroInput.value);
+        const probabilidad = Math.floor(Math.random() * 100) + 1;
+        resultado.innerText = "TIENES " + probabilidad + "% DE GANAR";
+
+        boton.disabled = true; // Bloquea el botón después del primer clic
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+body {
+  background-image: url('fondo3.jpg');
+  background-color: rgb(236, 236, 236);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px; /* Espacio para el encabezado fijo */
+  color: #ffffff;
+}
+
+/* Contenedor principal */
+.container {
+  position: relative;
+  padding: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Encabezados */
+/* Título principal */
+h1 {
+  color: #ffd700; /* Amarillo */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* Sombras negras llamativas */
+  font-size: 48px;
+  margin: 20px 0;
+  animation: glow-h1 2.5s infinite alternate; /* Usar keyframes específicos para h1 */
+  font-weight: bold;
+}
+
+@keyframes glow-h1 {
+  0% {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1);
+  }
+  100% {
+    text-shadow: 6px 6px 15px rgba(255, 255, 0, 1), 4px 4px 10px rgba(0, 0, 0, 1); /* Brillo amarillo llamativo */
+  }
+}
+
+/* Título secundario */
+h2 {
+  color: #ffe498; /* Blanco */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* Sombras negras */
+  font-size: 36px;
+  margin: 30px 0 10px;
+  animation: glow-h2 1.5s infinite alternate; /* Usar keyframes específicos para h2 */
+}
+
+@keyframes glow-h2 {
+  0% {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1);
+  }
+  100% {
+    text-shadow: 6px 6px 15px rgb(171, 171, 171), 4px 4px 10px rgba(0, 0, 0, 1); /* Brillo gris llamativo */
+  }
+}
+
+/* Párrafo */
+p {
+  color: #ffffff; /* Blanco */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra negra semitransparente */
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+header nav a {
+  font-size: 1.2rem;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffffff;
+}
+
+/* Campo de entrada */
+.input-number {
+  width: 80%;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  font-size: 18px;
+  color: #333;
+  transition: border-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-number:focus {
+  border-color: #3df321;
+  outline: none;
+}
+
+/* Botón calcular */
+.boton-calcular {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #fc0000; /* Amarillo */
+  color: #ffffff; /* Negro */
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.boton-calcular:hover {
+  background-color: #e6c000; /* Amarillo oscuro */
+}
+
+/* Resultado */
+.resultado {
+  color: #ffffff; /* Blanco */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra negra semitransparente */
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #fff1c6; /* Blanco */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra negra semitransparente */
+
+}
+/* Sección de comentarios */
+.comentarios {
+  margin-top: 40px;
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo gris semitransparente */
+  border-radius: 10px;
+}
+
+.com {
+  background-color: rgba(255, 255, 255, 0.547); /* Fondo blanco semitransparente */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  text-align: left;
+}
+
+.com p {
+  font-size: 18px;
+  color: #ffffff; /* Blanco */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra negra semitransparente */
+}
+
+.com p strong {
+  color: #ffffff; /* Negro */
+  font-weight: bolder;
+  text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra negra semitransparente */
+}
+
+
+/* Contenedor de navegación */
+.navegacion {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+/* Sección de comentarios */
+.comentarios {
+  margin: 40px auto; /* Centrado horizontal */
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo gris semitransparente */
+  border-radius: 10px;
+  position: relative; /* Evita problemas de posicionamiento extraño */
+  display: flex; /* Para centrar contenido vertical y horizontalmente */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Ajusta la altura según el contenido */
+  box-sizing: border-box; /* Asegura que padding no agregue más al tamaño */
+}
+
+/* Ajustar el body para evitar espacio en blanco */
+html, body {
+  height: 100%; /* Asegura que el body ocupe toda la altura */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Oculta desplazamiento horizontal si existe */
+}
+
+/* Posicionamos las imágenes en las esquinas */
+.img-pinguino {
+  position: absolute;
+  top: 200px;
+  left: -250px; /* Antes: -120px, ahora más a la izquierda */
+  width: 250px;
+}
+
+.img-regalo1 {
+  position: absolute;
+  bottom: -400px;
+  right: 1100px;
+  width: 250px;
+}
+
+.img-regalo2 {
+  position: absolute;
+  top: 350px;
+  right:-300px;
+  width: 290px;
+}
+
+.img-santa {
+  position: absolute;
+  bottom: -500px;
+  right: -150px;
+  width: 250px;
+}
+.tragamonedas {
+  width: 170px; /* Ajusta el ancho */
+  height: auto; /* Mantiene la proporción */
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente */
+  position: relative; /* Necesario para ajustar su posición */
+  top: -10fpx; /* Ajusta este valor para moverlo hacia arriba(num negativos) o abajo (numero positivos) */
+}
