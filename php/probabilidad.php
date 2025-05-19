@@ -1,12 +1,12 @@
 <?php
 
-$htmlFile = 'html\Probabilidad.html';
+$htmlFile = '..\html\Probabilidad.html';
 if (file_exists($htmlFile)) {
 
     include $htmlFile;
 } else {
 
-    alert("No cargaron el archivo 😢");
+    echo("No cargaron el archivo 😢");
 
 }
 ?>
