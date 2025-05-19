@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding-top: 50px; /* Espacio para el encabezado fijo */
   background-color: #e8f0fe; /* Color de respaldo */
-  background-image: url('fondo1.jpg'); /* Imagen del fondo */
+  background-image: url('../archivos/fondo1.jpg'); /* Imagen del fondo */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

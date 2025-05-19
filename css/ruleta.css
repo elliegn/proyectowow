@@ -7,7 +7,7 @@ body {
     background-color: #222;
     color: white;
     font-family: 'Poppins', sans-serif;
-    background-image: url("casinofondo.jpg");
+    background-image: url('../archivos/casinofondo.jpg');
     padding-top: 100px; /* Espacio para el encabezado fijo */
 }
 

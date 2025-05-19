@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding-top: 100px; /* Espacio para el encabezado fijo */
   background-color: #333; /* Color de respaldo gris oscuro */
-  background-image: url('fondo4.jpg'); /* Imagen de fondo */
+  background-image: url('../archivos/fondo4.jpg'); /* Imagen de fondo */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

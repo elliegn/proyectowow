@@ -1,6 +1,6 @@
 /* Estilo general */
 body {
-  background-image: url('fondo5.jpg');
+  background-image: url('../archivos/fondo5.jpg');
   background-color: rgb(2, 2, 2);
   background-size: cover;
   background-position: center;

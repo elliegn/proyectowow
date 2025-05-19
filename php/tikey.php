@@ -1,6 +1,6 @@
 <?php
 
-$htmlFile = 'html\Probabilidad.html';
+$htmlFile = 'html\tikey.html';
 if (file_exists($htmlFile)) {
 
     include $htmlFile;
