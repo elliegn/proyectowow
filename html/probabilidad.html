@@ -14,7 +14,7 @@
   <!-- Encabezado fijo -->
  <header>
     <nav>
-      <a href="index.html">Inicio</a>
+      <a href="../index.html">Inicio</a>
       <a href="sorteo.html">¿De que trata?</a>
       <a href= "REGALOS.html">Regalos</a>
       <a href="ruleta.html">Casino</a>
@@ -24,17 +24,17 @@
   </header>
 
   <div class="container">
-    <img src="p.png" class="img-pinguino" alt="pingüino">
-    <img src="r1.png" class="img-regalo1" alt="regalo">
-    <img src="r2.png" class="img-regalo2" alt="regalo">
-    <img src="s.png" class="img-santa" alt="santa">
+    <img src="../archivos/p.png" class="img-pinguino" alt="pingüino">
+    <img src="../archivos/r1.png" class="img-regalo1" alt="regalo">
+    <img src="../arhcivos/r2.png" class="img-regalo2" alt="regalo">
+    <img src="../archivos/s.png" class="img-santa" alt="santa">
 
     <h1>PROBABILIDAD<br>DE <br> GANAR</h1>
     <p>Aquí puedes testear tu suerte! Descubre el porcentaje que tienes de ganar alguno de nuestros premios 🦄😍</p>
   
     <h2>¡DESCUBRE!</h2>
     <div class="boton">
-      <img src="t.gif" alt="tragamonedas" class="tragamonedas">
+      <img src="../archivos/t.gif" alt="tragamonedas" class="tragamonedas">
       <input type="number" id="numero" placeholder="Pon tu numero de la suerte 😝👑" class="input-number">
       <button id="boton" class="boton-calcular">Calcular</button>
       <div class="resultado"> 
@@ -59,28 +59,8 @@
     </div>
   </div>
 
+   <script src="../js/probabilidad.js"></script>
 
-  <script>
-    const boton = document.getElementById('boton');
-    const numeroInput = document.getElementById('numero');
-    const resultado = document.getElementById('resultado');
-
-    // Deshabilita el botón inicialmente
-    boton.disabled = true;
-
-    numeroInput.addEventListener('input', () => {
-        // Si el campo tiene algún valor, habilita el botón; de lo contrario, lo deshabilita
-        boton.disabled = numeroInput.value.trim() === '';
-    });
-
-    boton.addEventListener('click', () => {
-        const numero = parseInt(numeroInput.value);
-        const probabilidad = Math.floor(Math.random() * 100) + 1;
-        resultado.innerText = "TIENES " + probabilidad + "% DE GANAR";
-
-        boton.disabled = true; // Bloquea el botón después del primer clic
-    });
-</script>
 
 </body>
 </html>

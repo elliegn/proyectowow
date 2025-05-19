@@ -71,7 +71,7 @@ function girarRuleta() {
 
         // Cambiar el GIF según si ganó o perdió
         const gif = document.getElementById('resultado-gif');
-        gif.src = gano ? "archivos/gana.gif" : "archivos/lcasino.gif";
+        gif.src = gano ? '../archivos/gana.gif' : '../archivos/lcasino.gif';
 
         enMovimiento = false;
     }, 4000);
