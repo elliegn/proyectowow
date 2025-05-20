@@ -101,9 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
       mensajeTicket.style.display = "block";
     });
   
-    siguientePaso3.addEventListener("click", () => {
-      mostrarPaso(3);
-      victoriaSound.currentTime = 0;
-      victoriaSound.play();
-    });
+siguientePaso3.addEventListener("click", () => {
+  mostrarPaso(3);
+  victoriaSound.volume = 0.2; // volumen al 20%
+  victoriaSound.currentTime = 0;
+  victoriaSound.play();
+});
   });
