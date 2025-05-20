@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (cantidadInput.value > 0) {
         mostrarPaso(1);
       } else {
-        alert("Por favor, ingresa una cantidad válida.");
+        alert("Por favor, ingresa una cantidad valida.");
       }
     });
   
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".detalles").forEach((det) => det.style.display = "none");
         document.getElementById(`detalles${metodoSeleccionado.charAt(0).toUpperCase() + metodoSeleccionado.slice(1)}`).style.display = "block";
       } else {
-        alert("Por favor, selecciona un método de pago.");
+        alert("Por favor, selecciona un metodo de pago.");
       }
     });
   
