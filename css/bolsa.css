@@ -2,12 +2,12 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-image: url('../archivos/accionessubiendo.jpg');
-  background-size: cover; /* Cubre todo el fondo */
-  background-repeat: no-repeat; /* No se repite */
-  background-position: center; /* Centra la imagen */
-  background-attachment: fixed; /* Fija la imagen al fondo */
+  background-size: cover; /* cubre todo el fondo */
+  background-repeat: no-repeat; /* no se repite */
+  background-position: center; /* centra la imagen */
+  background-attachment: fixed; /* fija la imagen al fondo */
   color: #00ff88;
-  min-height: 100vh; /*   Asegura que cubra toda la pantalla */
+  min-height: 100vh; /* asegura que cubra toda la pantalla */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,35 +22,35 @@ body {
   z-index: 1;
 }
 
-
 h2 {
   color: #ffffff; /* verde */
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* Sombras negras */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* sombras negras */
   font-size: 25px;
   margin: 20px 0;
 }
 
 h1 {
-  color: #ffd900; /* Blanco */
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* Sombras negras */
+  color: #ffd900; /* blanco */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* sombras negras */
   font-size: 35px;
   margin: 50px 0;
 }
 
 p {
-  color: #ffffff; /* Blanco */
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* Sombras negras */
+  color: #ffffff; /* blanco */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* sombras negras */
   font-size: 36px;
   margin: 30px 0 10px;
-  animation: glow-p 1.5s infinite alternate; /* Usar keyframes específicos para h2 */
+  animation: glow-p 1.5s infinite alternate; /* animacion de brillo para p */
 }
 
+/* animacion para el brillo del texto en p */
 @keyframes glow-p {
   0% {
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1);
   }
   100% {
-    text-shadow: 6px 6px 15px rgb(171, 171, 171), 4px 4px 10px rgba(0, 0, 0, 1); /* Brillo gris llamativo */
+    text-shadow: 6px 6px 15px rgb(171, 171, 171), 4px 4px 10px rgba(0, 0, 0, 1); /* brillo gris llamativo */
   }
 }
 
@@ -76,6 +76,9 @@ p {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
   margin-bottom: 30px;
+  position: sticky; /* la grafica se mantiene visible al hacer scroll */
+  top: 0; /* se queda pegada al tope del contenedor */
+  z-index: 10; /* asegura que este sobre otros elementos */
 }
 
 canvas {
@@ -93,9 +96,9 @@ canvas {
 
 input,
 button {
-  border-radius: 8px; /* Bordes redondeados */
-  padding: 10px; /* Espaciado interno */
-  border: none; /* Sin borde */
+  border-radius: 8px; /* bordes redondeados */
+  padding: 10px; /* espaciado interno */
+  border: none; /* sin borde */
   font-size: 16px;
   margin-top: 10px;
 }
@@ -104,7 +107,7 @@ button {
   background-color: #00ff88;
   color: #000;
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.3s;
+  transition: transform 0.2s, background-color 0.3s; /* animacion al pasar el mouse */
 }
 
 button:hover {
@@ -116,40 +119,41 @@ input {
   background-color: rgba(47, 47, 47, 0.42);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.565);
-  width: 50%; /* Llenar el espacio disponible */
-  box-sizing: border-box; /* Incluir el borde y el padding en el ancho */
+  width: 50%; /* llenar el espacio disponible */
+  box-sizing: border-box; /* incluir el borde y el padding en el ancho */
 }
 
 input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
+
 .metodo {
-  display: flex; /* Alinear elementos en fila */
-  align-items: center; /* Alinear verticalmente al centro */
-  gap: 10px; /* Espaciado uniforme entre los elementos */
-  margin-bottom: 10px; /* Espaciado entre cada fila de método */
+  display: flex; /* alinear elementos en fila */
+  align-items: center; /* alinear verticalmente al centro */
+  gap: 10px; /* espaciado uniforme entre los elementos */
+  margin-bottom: 10px; /* espaciado entre cada fila de metodo */
 }
 
 .metodo input[type="radio"] {
-  margin: 0; /* Eliminar márgenes innecesarios */
-  transform: scale(1.2); /* Agrandar un poco el tamaño del radio button */
+  margin: 0; /* eliminar margenes innecesarios */
+  transform: scale(1.2); /* agrandar un poco el tamaño del radio button */
 }
 
 .metodo label {
-  margin: 0; /* Eliminar márgenes adicionales */
-  font-size: 1.2rem; /* Tamaño del texto */
-  color: #ffffff; /* Color blanco */
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* Sombras negras */
+  margin: 0; /* eliminar margenes adicionales */
+  font-size: 1.2rem; /* tamaño del texto */
+  color: #ffffff; /* color blanco */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* sombras negras */
 }
 
 .metodo img {
-  width: 30px; /* Tamaño de las imágenes */
-  height: auto; /* Mantener proporción */
-  margin-left: 10px; /* Espaciado entre el texto y la imagen */
-  border-radius: 6px; /* Bordes redondeados */
-  background-color: #ffffff; /* Fondo blanco */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-  padding: 5px; /* Espaciado interno */
+  width: 30px; /* tamaño de las imagenes */
+  height: auto; /* mantener proporcion */
+  margin-left: 10px; /* espaciado entre el texto y la imagen */
+  border-radius: 6px; /* bordes redondeados */
+  background-color: #ffffff; /* fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra */
+  padding: 5px; /* espaciado interno */
 }
 
 .imagen {
@@ -190,15 +194,4 @@ header nav a {
 
 header nav a:hover {
   color: #ffffff;
-}
-
-.grafica {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
-  margin-bottom: 30px;
-  position: sticky; /* La gráfica se mantiene visible */
-  top: 0; /* Se queda pegada al tope del contenedor */
-  z-index: 10; /* Asegura que esté sobre otros elementos */
 }
