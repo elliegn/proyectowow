@@ -6,9 +6,7 @@ function obtenerDatos() {
     document.getElementById("recibo-sangre").textContent = params.get("sangre") || "No ingresado";
     document.getElementById("recibo-curp").textContent = params.get("curp") || "No ingresado";
     document.getElementById("recibo-postal").textContent = params.get("postal") || "No ingresado";
-
-    // Obtener fecha y hora desde la URL
-    document.getElementById("fecha").textContent = params.get("fecha") || "Fecha no registrada";
+document.getElementById("fecha").textContent = params.get("fecha") || "Fecha no registrada";
     document.getElementById("hora").textContent = params.get("hora") || "Hora no registrada";
 }
 
