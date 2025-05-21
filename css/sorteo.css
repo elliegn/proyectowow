@@ -1,24 +1,24 @@
 body {
   margin: 0;
-  padding-top: 50px; /* Espacio para el encabezado fijo */
-  background-color: #e8f0fe; /* Color de respaldo */
-  background-image: url('../archivos/fondo1.jpg'); /* Imagen del fondo */
+  padding-top: 50px; /* espacio para el encabezado fijo */
+  background-color: #e8f0fe; /* color de respaldo */
+  background-image: url('../archivos/fondo1.jpg'); /* imagen del fondo */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
-  overflow-x: hidden; /* Evita scroll horizontal */
+  height: 100vh; /* asegura que el fondo cubra toda la pantalla */
+  overflow-x: hidden; /* evita scroll horizontal */
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
 .header {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px 0;
+  padding: 10px 0; /* espacio interno arriba y abajo */
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; /* asegura que el encabezado este por encima de otros elementos */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -33,7 +33,7 @@ body {
   color: #ffd700;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /* cambia el color suave cuando pasas el mouse */
 }
 
 .header nav a:hover {
@@ -42,49 +42,51 @@ body {
 
 h1 {
   margin-top: 20px;
-  color: #ffffff; /* Amarillo */
-  font-size: 2.5rem;
+  color: #ffffff; /* amarillo */
+  font-size: 3.0rem;
   font-weight: 700;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1), 1px 1px 5px rgba(0, 0, 0, 1); /* Sombras negras */
-  font-stretch: normal; /* Asegura que la tipografía no esté alargada */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1), 1px 1px 5px rgba(0, 0, 0, 1); /* sombras negras */
+  font-stretch: normal; /* no estira la fuente */
 }
 
 p {
   margin-top: 20px;
-  color: #fff3af; /* Amarillo */
-  font-size: 1.6rem;
+  color: #fff3af; /* amarillo */    
+  font-size: 1.8rem;
   font-weight: 700;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1), 1px 1px 5px rgba(0, 0, 0, 1); /* Sombras negras */
-  font-stretch: normal; /* Asegura que la tipografía no esté alargada */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1), 1px 1px 5px rgba(0, 0, 0, 1); /* sombras negras */
+  font-stretch: normal; /* no estira la fuente */
 }
 
 h2 {
-  color: #ffd700; /* Amarillo */
-  font-size: 2rem;
+  color: #ffe02f; /* amarillo */
+  font-size: 2.2rem;
   margin: 20px 0;
   font-weight: 600;
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* Sombras negras llamativas */
-  animation: glow 1.5s infinite alternate;
-  font-stretch: normal; /* Asegura que la tipografía no esté alargada */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1); /* sombras negras llamativas */
+  animation: glow 1.5s infinite alternate; /* hace que el texto brille animado */
+  font-stretch: normal; /* no estira la fuente */
 }
 
+/* animacion para el brillo del h2 */
 @keyframes glow {
   0% {
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 1);
   }
   100% {
-    text-shadow: 6px 6px 15px rgba(255, 255, 0, 1), 4px 4px 10px rgba(0, 0, 0, 1); /* Añade un brillo amarillo llamativo */
+    text-shadow: 6px 6px 15px rgb(255, 174, 0), 4px 4px 10px rgba(0, 0, 0, 1); /* agrega un brillo amarillo */
   }
 }
 
 .image-container img {
   max-width: 250px;
-  height: auto; /* Asegura que las imágenes no se deformen */
+  height: auto; /* no deforma la imagen */
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Sombra suave y sin contornos de caja */
-  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* sombra suave sin borde de caja */
+  animation: float 3s ease-in-out infinite; /* hace que la imagen suba y baje suavemente */
 }
 
+/* animacion para que la imagen flote */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
